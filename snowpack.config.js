@@ -5,6 +5,6 @@ module.exports = {
     src: "/_dist_",
   },
   buildOptions: {
-    baseUrl: "https://github.com/mh3mh0/weather",
+    baseUrl: "https://mh3mh0.github.io/weather/",
   },
 };
