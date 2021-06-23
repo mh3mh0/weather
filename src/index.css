@@ -1,3 +1,11 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "tailwindcss/dist/base.css";
+@import "tailwindcss/dist/components.css";
+@import "tailwindcss/dist/utilities.css";
+
+.font1 {
+  font-family: "Pacifico", cursive;
+}
+
+.font2 {
+  font-family: "Shadows Into Light", cursive;
+}
