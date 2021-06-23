@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/sun.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="pre-connect" href="https://fonts.googleapis.com">
+  <link rel="pre-connect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="pre-connect" href="https://fonts.googleapis.com">
+  <link rel="pre-connect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-snowpack-app" />
+  <!--
+      Snowpack will replace / with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+  <link rel="stylesheet" type="text/css" href="/_dist_/index.css" />
+  <title>Weather APP</title>
+</head>
+
+<body class="bg-indigo-900 flex flex-col h-screen sm:flex-col sm:h-auto">
+  <!--
+      This HTML file is a template.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      Start modifying from here.
+    -->
+
+  <header class="bg-blue-200 position-absolute flex justify-between items-center md:pl-40 md:pr-40">
+    <p class="text-2xl md:text-5xl text-gray-700 mx-4 font2">The Weather...</p>
+    <img class="mx-4 md:m-4 md:h-10 md:w-10 " src="./sun.ico" alt="little-logo">
+  </header>
+  <main class="">
+    <div class="h-68 sm:h-full sm:bg-center bg-no-repeat bg-center bg-cover flex flex-initial"
+      style="background-image: url(https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);">
+
+      <div class="mt-48 m-6">
+        <form class="flex gap-6" action="">
+          <input type=" text" placeholder="Add your city" autocomplete="country-name" autofocus
+            class="uppercase tracking-tighter bad-input mx-auto px-1 py-1 bg-blue-200 hover:bg-blue-50 text-md text-blue-900 rounded text-center border-0 outline-none focus:outline-none focus:ring w-auto font-light ring-offset-2 ring-4 ring-indigo-500 ring-opacity-2" />
+          <button
+            class="bad-input mx-auto px-1 py-1 cursor-pointer rounded text-center outline-none focus:outline-none hover:bg-blue-200 bg-indigo-400 ring-offset-2 ring-4 ring-indigo-500 ring-opacity-2 font-light transform hover:scale-105 hover:text-blue-900 text-white text-sm">Find
+            it out</button>
+        </form>
+      </div>
+    </div>
+
+    <img class="h-24 mx-auto text-2 mt-10 sm:mx-auto sm:mt-10" src="./rainbow.png" alt="rainbow">
+
+    <div
+      class="cards-container flex md:flex flex-wrap justify-center mx-12 md:mx-6 mt-6 mb-6 gap-6 sm:gap-6 sm:m-4 sm:mb-8 bg-indigo-200 p-3 rounded relative ring-4 ring-indigo-500">
+    </div>
+    <div class="m-2 justify-center position-absolute flex items-center md:text-4xl">
+      <p class="font2 text-gray-300">Look your weather location here!</p>
+      <img class="w-4 h-4 m-2 md:w-6 md:h-6" src="./arrow_up.ico" alt="arrow" />
+    </div>
+    <!-- <div class=" cards-container flex flex-wrap sm:flex-col justify-center mt-6 mb-6 gap-4 sm:m-4"></div> -->
+    <img class="h-24 mx-auto mt-10 sm:mx-auto sm:mt-10 mb-10" src="./moon.ico" alt="moon">
+
+
+  </main>
+
+  <footer class="text-gray-700 bg-blue-200 mb-0 max-w-screen fixed-bottom sm:fixed-bottom">
+    <div class="list-none md:flex md:flex-row-reverse justify-around">
+      <div class="mt-4 font2 ml-8">
+        <li class="hover:text-blue-600 cursor-pointer"><i class="fa fa-facebook"></i> @whats_UpWeather</li>
+        <li class="hover:text-blue-400 cursor-pointer"><i class="fa fa-twitter"></i> @whats_UpWeather</li>
+        <li class="hover:text-pink-400 cursor-pointer"><i class="fa fa-instagram"></i> @whats_UpWeather</li>
+      </div>
+      <ul class="list-none font2 mt-4 mb-4 ml-8">
+        <li>Support</li>
+        <li>About us</li>
+        <li>Register</li>
+        <li>Privacy Policy </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Add more scripts here -->
+  <script type="module" src="/_dist_/index.js"></script>
+</body>
+
+</html>
